@@ -22,4 +22,3 @@ python main.py
 
 ## Autor
 Benjamin Lopez Mendoza - Abril 2025
-"""
