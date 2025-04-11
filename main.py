@@ -5,8 +5,15 @@ from load import load_to_mssql
 from config import API_KEY
 
 # 1. Extract
-api_key = '1fc907c2d888abe7cd75fb78250c8805'
-df_raw = extract_movies_from_api(api_key, num_pages=3)
+from config import API_KEY
+
+def main():
+    # Usar la API key
+    print(f"API Key cargada: {API_KEY}")
+
+if __name__ == "__main__":
+    main()
+df_raw = extract_movies_from_api( {API_KEY}, num_pages=3)
 
 # 2. Transform
 df_clean = clean_movies(df_raw)
